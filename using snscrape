@@ -11,7 +11,7 @@ def mongo(df):
     data_dict = df.to_dict("records")
     mycoll.insert_one({"index":f"{search}","data":data_dict})
     st.success("Uploaded Successfully!", icon='✅')
-    st.ballons()
+    st.balloons()
     collections = mydb.list_collection_names()
     st.write("List of collection that already exists : ")
     # for i in collections:
