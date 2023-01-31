@@ -20,12 +20,12 @@ def mongo(df):
     
 tweets_list1 = []
 with st.form("my_form"):
-    default_since = '2020-06-01'
-    default_untill = '2020-07-31'
+    default_since = '2022-01-01'
+    default_untill = '2023-01-30'
     search = st.text_input("Enter keywords you want to search : ")
     since = st.text_input("Enter start date :",default_since)
     untill = st.text_input("Enter start date :",default_untill)
-    maxtweets = st.slider("Enter count:")
+    maxtweets = st.slider("Enter count:",0,1000,100)
     maxTweets = int(maxtweets)
     Summit = st.form_submit_button('Submit')
     if Summit:
