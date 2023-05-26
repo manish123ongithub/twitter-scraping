@@ -37,10 +37,10 @@ json1 = df.to_json()
 csv = df.to_csv()
 
 with col1:
-    st.download_button(label='📥 Download Current Result as csv',
+    st.download_button(label='📥 Download as csv',
                        data=csv,
                        file_name='train.csv')
-    st.download_button(label='📥 Download Current Result as json',
+    st.download_button(label='📥 Download as json',
                        data=json1,
                        file_name='train.json')
 
